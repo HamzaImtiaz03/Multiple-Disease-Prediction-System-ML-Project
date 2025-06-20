@@ -3,6 +3,8 @@ numpy
 seaborn
 matplotlib
 scikit-learn
+xgboost
+tqdm
 streamlit
 streamlit-option-menu
 ipykernel
