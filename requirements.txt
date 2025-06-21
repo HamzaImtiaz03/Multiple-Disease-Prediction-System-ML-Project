@@ -8,3 +8,4 @@ tqdm
 streamlit
 streamlit-option-menu
 ipykernel
+pickle5
