@@ -1,8 +1,11 @@
 [project]
 name = "multiple-disease-prediction"
 version = "0.1.0"
-description = "Add your description here"
+description = """The **Multiple Disease Prediction System** is a web-based application that predicts the likelihood of **diabetes**, **heart disease**, and **thyroid cancer** using machine learning. Developed with **Python 3.13** and **Streamlit**, the system provides a clean and interactive interface for users to input medical data and receive real-time predictions powered by pre-trained models. The entire environment is managed using the `uv` tool for simplicity and reproducibility.
+"""
 readme = "README.md"
+author = "Hamza Imtiaz"
+email = "hamzaimtiaz8668@gmail.com"
 requires-python = ">=3.13"
 dependencies = [
     "ipykernel>=6.29.5",

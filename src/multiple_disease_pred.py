@@ -273,9 +273,6 @@ if selected == 'Thyroid Disease Prediction':
             stage, response, recurred
         ]
 
-        # TODO: Apply the same encoding you used during training
-        # Example: Label encoding, one-hot encoding, or any other preprocessing
-
         try:
             # Example placeholder for processed features:
             processed_input = preprocess_input(user_input)  # You must define this function
