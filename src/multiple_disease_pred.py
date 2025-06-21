@@ -14,10 +14,19 @@ working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # loading the saved models
 
+# Correct, cross-platform way using relative paths
+BASE_DIR = os.path.dirname(__file__)
+MODEL_DIR = os.path.join(BASE_DIR, 'saved_models')
 
-diabetes_model = pickle.load(open('E:/Multiple_Disease_Prediction/src/saved_models/diabetes_model.sav', 'rb'))
-heart_model = pickle.load(open('E:/Multiple_Disease_Prediction/src/saved_models/heart_model.sav', 'rb'))
-thyroid_model = pickle.load(open('E:/Multiple_Disease_Prediction/src/saved_models/thyroid_model.sav', 'rb'))
+with open(os.path.join(MODEL_DIR, 'diabetes_model.sav'), 'rb') as f:
+    diabetes_model = pickle.load(f)
+
+with open(os.path.join(MODEL_DIR, 'heart_model.sav'), 'rb') as f:
+    heart_model = pickle.load(f)
+
+with open(os.path.join(MODEL_DIR, 'thyroid_model.sav'), 'rb') as f:
+    thyroid_model = pickle.load(f)
+
 
 
 
